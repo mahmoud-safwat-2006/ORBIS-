@@ -1356,11 +1356,9 @@
 
 "@bsky.app/bottom-sheet@link:./modules/bottom-sheet":
   version "0.0.0"
-  uid ""
 
 "@bsky.app/expo-background-notification-handler@link:./modules/expo-background-notification-handler":
   version "0.0.0"
-  uid ""
 
 "@bsky.app/expo-dynamic-app-icon@^1.8.5":
   version "1.8.5"
@@ -1372,7 +1370,6 @@
 
 "@bsky.app/expo-emoji-picker@link:./modules/expo-emoji-picker":
   version "0.0.0"
-  uid ""
 
 "@bsky.app/expo-guess-language@^0.2.8":
   version "0.2.8"
@@ -1388,11 +1385,9 @@
 
 "@bsky.app/expo-orbis-gif-view@link:./modules/expo-orbis-gif-view":
   version "0.0.0"
-  uid ""
 
 "@bsky.app/expo-orbis-swiss-army@link:./modules/expo-orbis-swiss-army":
   version "0.0.0"
-  uid ""
 
 "@bsky.app/expo-scroll-edge-effect@^0.1.10":
   version "0.1.10"
@@ -1413,7 +1408,6 @@
 
 "@bsky.app/react-native-scroll-forwarder@link:./modules/react-native-scroll-forwarder":
   version "0.0.0"
-  uid ""
 
 "@bsky.app/react-native-uitextview@^2.7.1":
   version "2.7.1"
@@ -1854,6 +1848,15 @@
     debug "^4.3.4"
     getenv "^2.0.0"
 
+"@expo/env@~2.5.2":
+  version "2.5.2"
+  resolved "https://registry.yarnpkg.com/@expo/env/-/env-2.5.2.tgz#0ab8ab97e76d699f55abb548926481295f2e312c"
+  integrity sha512-z8kCvBVJpd2S20a+Ab1otQgz8sJLeR7CXDTsuAMcNbYFsK10Fdhfb7rx9Ys1vvlbijnY55eZhQvJACajc1IjBQ==
+  dependencies:
+    chalk "^4.0.0"
+    debug "^4.3.4"
+    getenv "^2.0.0"
+
 "@expo/expo-modules-macros-plugin@0.6.1":
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/@expo/expo-modules-macros-plugin/-/expo-modules-macros-plugin-0.6.1.tgz#5581bbe09e0aedb39ea787a9960eb0a9ee07d2ff"
@@ -2166,6 +2169,15 @@
   version "57.0.6"
   resolved "https://registry.yarnpkg.com/@expo/require-utils/-/require-utils-57.0.6.tgz#b6f0c38cca8261ec8aa8949bfe176fe3cdb26a55"
   integrity sha512-PKWfFdMgwWrlSP6NGplCi2nK0dEM5MeJ2Cj1ijr5VWTmZ+pKsJsJw2dWkBtlFDyxMY8eUjCPZ7hoqFEnbc0Pcw==
+  dependencies:
+    "@babel/code-frame" "^7.20.0"
+    "@babel/core" "^7.25.2"
+    "@babel/plugin-transform-modules-commonjs" "^7.24.8"
+
+"@expo/require-utils@^58.0.4":
+  version "58.0.4"
+  resolved "https://registry.yarnpkg.com/@expo/require-utils/-/require-utils-58.0.4.tgz#e9548b7004ba14d948b2d2e8bf41e93b34777233"
+  integrity sha512-DvjS5NCitXYcad2Woe1EMHJKcbhTbE77HX0BgOQGL2LFHE3q2H0n8kCWDPBOCVJ63Drap3c35nwoJwF5TQL7Tw==
   dependencies:
     "@babel/code-frame" "^7.20.0"
     "@babel/core" "^7.25.2"
@@ -6801,7 +6813,6 @@ escodegen@^2.0.0:
 
 "eslint-plugin-bsky-internal@link:lint-rules":
   version "0.0.0"
-  uid ""
 
 eslint-plugin-react-native-a11y@^3.5.1:
   version "3.5.1"
@@ -6969,6 +6980,14 @@ expo-constants@~57.0.19, expo-constants@~57.0.21:
   dependencies:
     "@expo/env" "~2.4.3"
 
+expo-constants@~58.0.11:
+  version "58.0.12"
+  resolved "https://registry.yarnpkg.com/expo-constants/-/expo-constants-58.0.12.tgz#770aa72bd5c518baed2090730b9585005231a4e5"
+  integrity sha512-d3/dsps32nU4m6YJQbXQ1dIfn58GxfmJjTnZ0WtnhdSHTdG/oVsOakLqYRlX/FaLUKkQOSHXMf7hyCx+2a/HSQ==
+  dependencies:
+    "@expo/env" "~2.5.2"
+    "@expo/require-utils" "^58.0.4"
+
 expo-contacts@^57.0.6:
   version "57.0.6"
   resolved "https://registry.yarnpkg.com/expo-contacts/-/expo-contacts-57.0.6.tgz#3d2ee5e9d599784ff7a3d43431462619b3240053"
@@ -7086,12 +7105,12 @@ expo-linear-gradient@~57.0.2:
   resolved "https://registry.yarnpkg.com/expo-linear-gradient/-/expo-linear-gradient-57.0.2.tgz#a9d85700cd822678556a6166640b0240d31fe011"
   integrity sha512-eGNSfcbdXYvw0B/TQ3nmXKQgj0jLUi3EgsXGlvI79rlXg5RR5dQTkY2yqkf7BQDM3PMd3tqBMZdsLhvBqSUaMg==
 
-expo-linking@~57.0.10:
-  version "57.0.12"
-  resolved "https://registry.yarnpkg.com/expo-linking/-/expo-linking-57.0.12.tgz#52bad79a899369d178add7be591e7e7d128233b8"
-  integrity sha512-oKLva5FOBx4txZa9LFu6RaHGAy1lFCyoOM91uU9H+gZi1iskjuSxV12GgS9H+yGGe2aSLufh6IfwSWrjEIsOuA==
+expo-linking@~58.0.12:
+  version "58.0.12"
+  resolved "https://registry.yarnpkg.com/expo-linking/-/expo-linking-58.0.12.tgz#e837c9af78e878eacfc95b7b6a521dd1262a71b6"
+  integrity sha512-2y6RVWELmephqWD/W0RWQao4Kn7vYB3Pe4tRHf+R4pEYZp/+QVJcJ+IMq2TyCvJZAXFGYbIOaPa8exm31fEfHw==
   dependencies:
-    expo-constants "~57.0.21"
+    expo-constants "~58.0.11"
     invariant "^2.2.4"
 
 expo-localization@~57.0.2:
